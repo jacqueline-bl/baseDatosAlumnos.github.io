@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma escolar</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+
+<header>
+
+  <h1>Academia</h1>
+
+</header>
+
+<main>
+  
+  <div class="secciones">
+
+    <h2>REGISTRO</h2>
+
+    <img src="/img/registro.png" alt="icono de registrarse" title="Dibujo de formulario de registro">
+
+  </div>
+  
+  <div class="registro">
+
+    <form class="formRegistro" id="formRegistroEstudiante"> <!--fORM REG EST-->
+
+        <h3>DEL ESTUDIANTE:</h3>
+
+        <label for="nombre">Nombre: <input type="text" name="" id="nombre"></label>
+
+        <label for="primerApellido">Primer apellido: <input type="text" name="" id="primerApellido"></label>
+        
+        <label for="segundoApellido">Segundo apellido: <input type="text" name="" id="segundoApellido"></label>
+        
+        <label for="edad">Edad: <input type="number" name="" id="edad" min="8" max="100"></label>
+
+        <label for="asignatura">Asignatura: <input type="text" name="" id="asignatura"></label>
+    
+        <input class="botonRegistro" type="submit" value="Guardar" > <!--BOTÓN REGISTRO ALUMNO-->
+
+        <span id="msjAlumnoRegistro" class="esconder">Registro exitoso</span><!--MENSAJE ALUMNO-->
+
+    </form>
+    
+    
+    <form class="formRegistro" action="" id="formRegistroCalificacion"> <!--fORM REG CAL-->
+
+      <h3>DE LA CALIFICACIÓN</h3>
+      
+      <label for="nombreCalificacion" >Nombre del estudiante: <input type="text" name="" id="nombreCalificacion"></label>
+
+      <label for="asignaturaAcalificar">Asignatura que cursa: <input type="text" name="" id="asignaturaAcalificar"></label>
+
+      <label for="calificacion">Calificación: <input type="number" name="" id="calificacion"></label>
+      
+      <input class="botonRegistro" type="submit" value="Guardar"><!--BOTÓN REGISTRO CALIFICACIÓN-->
+
+      <span id="msjCalificacionRegistro" class="esconder">Registro exitoso</span> <!--MENSAJE CALIFICACIÓN-->
+
+    </form>
+    
+  </div>
+    
+  <div class="secciones">
+
+    <h2>INFORMACIÓN</h2>
+
+    <img src="/img/informe.png" alt="icono de informe" title="Dibujo de una hoja con un informe">
+    
+  </div>
+  
+  <div class="informacion">
+
+    <form class="formInformacion" action="" id="formListaAsignatura"><!--fORM INF ASIG-->
+
+      <h3>LISTA DE ESTUDIANTES</h3>
+
+      <label for="asignaturaLista">Buscar asignatura</label>
+      <div class="buscador">
+        <input type="text" name="" id="asignaturaLista"><input type="submit" value="🔎" class="botonlupa"> <!--BOTÓN LISTA ESTUDIANTES-->
+      </div>      
+      <span class="noDisponible">⚠Función disponible ¡Muy pronto!</span>
+    </form>
+
+    <form class="formInformacion" action="" id="formBuscarNombrePromedio"><!--fORM INF PROM NOM-->
+
+      <h3>PROMEDIO INDIVIDUAL</h3>
+
+      <label for="buscarNombrePromedio">Buscar por <strong>nombre</strong></label>
+      <div class="buscadorInformacion">
+        <input type="text" name="" id="buscarNombrePromedio"><input type="submit" value="🔎"class="botonlupa"><!--BOTÓN BUSCAR PROMEDIO POR NOMBRE-->
+      </div>
+      <span class="noDisponible">⚠Función disponible ¡Muy pronto!</span>
+    </form> 
+      
+    <form class="formInformacion" action="" id="formBuscarPrimerApellidoPromedio"><!--fORM INF PROM APELL-->
+
+      <h3>PROMEDIO INDIVIDUAL</h3>
+    
+      <label for="buscar1ApellidoPromedio">Buscar por <strong>primer apellido</strong></label>
+
+      <div class="buscadorInformacion">
+        <input type="text" name="" id="buscar1ApellidoPromedio"><input type="submit" value="🔎"class="botonlupa"><!--BOTÓN BUSCAR PROMEDIO POR APELLIDO-->
+      </div>
+
+      <span class="noDisponible">⚠Función disponible ¡Muy pronto!</span>
+
+     </form>     
+
+    <form class="formInformacion" action="" id="formBuscarAsignaturaPromedio">
+
+      <h3>PROMEDIO GRUPAL</h3>
+
+      <label for="buscarAsignaturaPromedio">Buscar asignatura</label><!--fORM INF PROM ASIG-->
+
+      <div class="buscadorInformacion">
+        <input type="text" name="" id="buscarAsignaturaPromedio"><input type="submit" value="🔎"class="botonlupa"><!--BOTÓN BUSCAR PROMEDIO POR ASIGNATURA-->
+      </div>
+      <span class="noDisponible">⚠Función disponible ¡Muy pronto!</span>
+    </form>
+    
+  </div>
+  
+</main>
+
+<script src="/main.js"></script>
+
+
+
+</body>
+</html>

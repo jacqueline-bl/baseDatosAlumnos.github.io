@@ -1,0 +1,182 @@
+
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body{
+  background-color: white;
+  font-size: 20px;
+}
+
+h1{
+  font-size: 44px;
+  padding: 30px;
+  background-color: #4b7257;
+  color: white;
+  text-align: center;
+}
+
+img{
+  width: 40px;
+  height: 40px;
+}
+
+.secciones{
+  background-color: goldenrod;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+}
+
+
+h2{
+  font-size: 40px;
+  padding: 20px;
+  color: crimson;
+  text-align: center;
+}
+
+h3{
+  color:mediumslateblue;
+  padding: 5px;
+  margin: 5px;
+  font-weight:bold;
+  align-self: center;
+  align-items: center;
+}
+
+strong{
+  font-weight: bold;
+}
+
+
+.registro{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+  .formRegistro {
+    border: 2px solid cornflowerblue;
+    width: 400px;
+    height: 380px;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botonRegistro {
+    align-self: center;
+    padding: 5px;
+    margin: 5px;
+  }
+
+.validarRegistro{
+  display: block;
+  align-self: center;
+  color:green;
+  font-weight: bolder;
+  padding: 5px;
+  margin: 5px;
+}
+
+.esconder{
+  display: none;
+}
+
+.informacion{
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+  .formInformacion {
+    border: 2px solid cornflowerblue;
+    width: 380px;
+    height: 300px;
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+label{
+  padding: 10px;
+}
+
+#nombreCalificacion{
+  width: 140px ;
+}
+input {
+  height: 25px;
+}
+button{
+  font-size: 20px;
+}
+
+.buscadorInformacion{
+  display: flex;
+  flex-direction: row;
+}
+
+.noDisponible{
+  color: red;
+  font-weight: 200;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+@media (max-width:970px ){
+
+  .registro{
+    height: 480px;
+  }
+  .formRegistro{
+    height:450px ;
+  }
+  .informacion{
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+}
+@media (max-width:630px ){
+  .registro{
+      flex-direction: column;
+      justify-content: center;
+      height: 1000px;
+  }
+
+  .formRegistro{
+    height: 450px;
+  }
+  .botonRegistro{
+    width: 70px;
+  }
+  input {
+    width: 80%;
+  }
+
+  label{
+    width: 230px;
+    
+  }
+  .informacion label{
+    text-align: center;
+  }
+  .botonlupa{
+    width: 30px;
+  }
+    
+
+}
